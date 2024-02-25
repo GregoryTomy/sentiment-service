@@ -1,0 +1,34 @@
+
+<html>
+<head>
+  <style>
+    div { width: 200px; padding-bottom: 20px; }
+    textarea { width: 200px; height: 50px; }
+    button { width: 100px; height: 25px; display: block; }
+  </style>
+  <title>Movie Review Sentiment Classifier</title>
+  <script>
+    var score = function() {
+        var review = document.getElementById("review").value;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("output").innerHTML += "<div>" +
+                    review + ": " +xhttp.responseText+ "</div>";
+                }
+            };
+        xhttp.open("GET", "http://localhost:4000/predict?input="+review,false);
+        xhttp.send();
+    }
+  </script>
+</head>
+<body>
+    <h1>Movie Review Sentiment Classifier</h1>
+  <div>Enter your review:</div>
+  <form onsubmit="return false">
+    <textarea id="review"></textarea>
+    <button onclick="score()";>Score it!</button>
+  </form>
+<div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/code
