@@ -14,7 +14,7 @@ This project encompasses the design, construction, and implementation of a senti
 - Model deployment and operationalization
 
 ### Demo
-![](images/demo.gif)
+![](images/demo_2.gif)
 
 ## Business Case
 
@@ -25,10 +25,12 @@ The company's platform allows for user-generated movie reviews that directly inf
 1. **Model Training**: Developed a sentiment analysis model using Python's NLTK library to classify movie reviews as positive or negative.
 
 2. **API Endpoint**: Leveraged AWS Lambda to host the model, creating a callable API endpoint for real-time sentiment analysis.
-
+    ![](images/lambda_api_gateway.png)
+    ![](images/aws_faas_test.png)
 3. **Model Deployment**: Deployed the model within a Docker container, utilizing Flask as the web server to handle incoming requests.
 
 4. **Front-End Demonstration**: Constructed a mini-website that interacts with the model, allowing stakeholders to input movie reviews and instantly view the sentiment analysis results.
+    ![](images/web_final.png)
 
 ## How to Run the Project
 
