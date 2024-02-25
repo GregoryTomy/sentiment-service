@@ -203,4 +203,4 @@ if __name__ == '__main__':
     logging.info(f"They accuracy score using the most informative features: {100 * accuracy_score_filtered}%")
 
     logging.info(f"Saving model")
-    save_model(model_filtered)
+    # save_model(model_filtered)

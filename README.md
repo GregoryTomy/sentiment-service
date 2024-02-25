@@ -22,12 +22,12 @@ The company's platform allows for user-generated movie reviews that directly inf
 
 ## Project Accomplishments
 
-1. **Model Training**: Developed a sentiment analysis model using Python's NLTK library to classify movie reviews as positive or negative.
+1. **Model Training**: Developed a simple sentiment analysis model using Python's NLTK library to classify movie reviews as positive or negative. The model achieved an accuracy score of 87.75%.
 
 2. **API Endpoint**: Leveraged AWS Lambda to host the model, creating a callable API endpoint for real-time sentiment analysis.
 
     ![](images/lambda_api_gateway.png)
-    
+
     ![](images/aws_faas_test.png)
 3. **Model Deployment**: Deployed the model within a Docker container, utilizing Flask as the web server to handle incoming requests.
 
