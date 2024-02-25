@@ -14,7 +14,7 @@ This project encompasses the design, construction, and implementation of a senti
 - Model deployment and operationalization
 
 ### Demo
-![](images/demo_2.gif)
+![](images/demo_3.gif)
 
 ## Business Case
 
